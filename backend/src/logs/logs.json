@@ -1,0 +1,317 @@
+[
+  {
+    "timestamp": "2026-05-26T07:00:53.007Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-26T07:01:24.689Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-26T07:32:23.148Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-26T07:32:52.737Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-26T07:33:11.060Z",
+    "action": "WRITE",
+    "path": ".env",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-26T07:33:20.825Z",
+    "action": "WRITE",
+    "path": "config\\app.json",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-26T08:50:31.113Z",
+    "action": "DELETE",
+    "path": "tmp\\temp.txt",
+    "decision": "ALLOW",
+    "risk": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-26T08:50:44.722Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T08:50:52.339Z",
+    "action": "DELETE",
+    "path": "src\\app.js",
+    "decision": "DENY",
+    "risk": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-26T09:16:20.952Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-26T09:32:23.045Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T09:32:24.811Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T09:32:27.428Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T09:32:28.949Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:20.573Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:35.173Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:36.209Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:37.005Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:41.720Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:09:45.985Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:07.556Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:09.211Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:10.569Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:11.807Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:16.994Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:19.871Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:21.355Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:10:43.539Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": "LOW"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:26.018Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:27.338Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:28.689Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:29.490Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:30.609Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:11:32.073Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:52.405Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:53.282Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:54.086Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:54.836Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:55.604Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:12:59.884Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:13:00.816Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:13:01.859Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:13:02.721Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:17:13.845Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:17:15.145Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-26T10:17:16.311Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  }
+]
