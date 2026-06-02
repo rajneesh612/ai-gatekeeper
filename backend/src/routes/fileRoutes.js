@@ -2,6 +2,7 @@ import { secureReadFile } from "../tools/readFile.js";
 import express from "express";
 import { secureWriteFile } from "../tools/writeFile.js";
 import { secureDeleteFile } from "../tools/deleteFile.js"; 
+import { getLogs } from "../services/logger.js";
 
 
 
@@ -46,4 +47,12 @@ router.delete("/delete-file", async (req, res) => {
     res.json(result);
 });
 
+router.get("/logs", async (req, res) => {
+
+    const logs = await getLogs();
+     const recentLogs = logs.reverse().slice(0, 10);
+
+    res.json(logs);
+
+});
 export default router;

@@ -1,0 +1,13 @@
+{
+  "ReaderBot": {
+    "permissions": ["READ"]
+  },
+
+  "WriterBot": {
+    "permissions": ["READ", "WRITE"]
+  },
+
+  "AdminBot": {
+    "permissions": ["READ", "WRITE", "DELETE"]
+  }
+}

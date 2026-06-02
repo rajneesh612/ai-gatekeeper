@@ -1,22 +1,52 @@
 export function calculateRisk(action, filePath) {
 
-    let risk = "LOW";
+    let score = 10;
+    let level = "LOW";
+    let reasons = [];
 
     if (
         filePath.includes(".env") ||
         filePath.includes("secret") ||
         filePath.includes("password")
     ) {
-        risk = "CRITICAL";
+        score = 95;
+        level = "CRITICAL";
+
+        reasons.push(
+            "Protected or sensitive file"
+        );
     }
 
-    if (action === "WRITE") {
-        risk = "MEDIUM";
+    else if (action === "DELETE") {
+
+        score = 70;
+        level = "HIGH";
+
+        reasons.push(
+            "Delete operation detected"
+        );
     }
 
-    if (action === "DELETE") {
-        risk = "HIGH";
+    else if (action === "WRITE") {
+
+        score = 40;
+        level = "MEDIUM";
+
+        reasons.push(
+            "File modification detected"
+        );
     }
 
-    return risk;
+    else {
+
+        reasons.push(
+            "Read operation"
+        );
+    }
+
+    return {
+        score,
+        level,
+        reasons
+    };
 }

@@ -2,6 +2,7 @@
 // Entry point for starting the Express server
 import app from './app.js';
 import { secureReadFile } from "./tools/readFile.js";
+import "dotenv/config";
 
 const PORT = process.env.PORT || 3000;
 

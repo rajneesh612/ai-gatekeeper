@@ -313,5 +313,288 @@
     "path": ".env",
     "decision": "DENY",
     "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-28T06:05:35.086Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": "LOW"
+  },
+  {
+    "timestamp": "2026-05-29T06:25:30.998Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": "LOW"
+  },
+  {
+    "timestamp": "2026-05-29T06:32:47.398Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T06:43:05.423Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T06:46:43.814Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T06:54:54.709Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T06:58:22.177Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T07:02:08.142Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T07:20:43.251Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T07:40:59.015Z",
+    "action": "WRITE",
+    "path": "hello world",
+    "decision": "DENY"
+  },
+  {
+    "timestamp": "2026-05-29T07:48:24.261Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T07:52:45.338Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": "LOW"
+  },
+  {
+    "timestamp": "2026-05-29T09:50:32.074Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T09:52:49.716Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T09:53:52.056Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": "LOW"
+  },
+  {
+    "timestamp": "2026-05-29T10:12:20.757Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T10:21:33.199Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T10:25:59.240Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-05-29T10:26:51.922Z",
+    "action": "DELETE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW",
+    "risk": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-29T10:37:46.954Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-29T10:43:43.408Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-01T09:39:18.810Z",
+    "action": "READ",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-01T09:43:39.447Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-01T09:48:18.090Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T04:04:26.992Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T04:10:21.114Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T04:17:47.052Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T04:20:30.838Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T04:30:12.682Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": {
+      "score": 10,
+      "level": "LOW",
+      "reasons": [
+        "Read operation"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-02T04:32:39.320Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T04:33:30.913Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T04:43:30.788Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": {
+      "score": 10,
+      "level": "LOW",
+      "reasons": [
+        "Read operation"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-02T04:46:50.021Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T04:49:04.431Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T05:00:54.558Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T05:05:38.040Z",
+    "action": "DELETE",
+    "path": ".env file",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T05:10:48.358Z",
+    "action": "WRITE",
+    "path": "tmp\\output.txt",
+    "decision": "ALLOW"
+  },
+  {
+    "timestamp": "2026-06-02T05:16:46.929Z",
+    "action": "DELETE",
+    "path": ".text",
+    "decision": "DENY",
+    "risk": {
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Delete operation detected"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-02T05:24:26.468Z",
+    "action": "DELETE",
+    "path": ".env",
+    "decision": "DENY",
+    "risk": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-06-02T05:27:19.346Z",
+    "action": "READ",
+    "path": "sample.txt",
+    "decision": "ALLOW",
+    "risk": {
+      "score": 10,
+      "level": "LOW",
+      "reasons": [
+        "Read operation"
+      ]
+    }
   }
 ]

@@ -1,65 +1,98 @@
 # AI Gatekeeper Backend
 
-A clean Node.js + Express backend starter for an "AI Gatekeeper" system.
+Node.js + Express backend for an AI-driven file access gatekeeper.
 
-## Folder Structure
+## What It Does
+
+The backend accepts natural language prompts, asks a local LLM (Ollama) to convert the prompt into a JSON action, then executes the action through security checks.
+
+Supported actions:
+- `READ`
+- `WRITE`
+- `DELETE`
+
+Each request includes:
+- AI decision (`action`, `filePath`, optional `content`)
+- Risk score and level (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`)
+- Final gatekeeper result (`ALLOW` or `DENY`)
+
+## Key Features
+
+- AI route at `POST /api/ai/chat` backed by Ollama (`qwen3` model)
+- Secure file operations with policy checks:
+   - Path traversal blocking (`..`)
+   - Blocked path protection (`.env`, `secret.txt`)
+   - Allowed write/delete path control (`tmp`)
+- Risk engine with scored output and reasons
+- Request logging in `src/logs/logs.json`
+- Recent logs API at `GET /api/files/logs`
+- Optional quarantine flow on repeated suspicious activity
+
+## Project Structure
 
 ```
 backend/
-  src/
-    middleware/   # Custom Express middleware
-    routes/       # Route handlers (API endpoints)
-    tools/        # Utility/helper functions
-    policies/     # Access control and AI policies
-    logs/         # Log files and logging utilities
-    services/     # Business logic and integrations
-    app.js        # Main Express app setup
-    server.js     # Server entry point
+   src/
+      app.js
+      server.js
+      routes/
+         aiRoutes.js
+         fileRoutes.js
+      tools/
+         readFile.js
+         writeFile.js
+         deleteFile.js
+      services/
+         ollamaService.js
+         riskEngine.js
+         anomalyDetector.js
+         quarantine.js
+         logger.js
+      policies/
+         policies.json
+      logs/
+         logs.json
 ```
 
-## Features
-- Express server with ES modules
-- Security best practices (helmet, cors)
-- Logging (morgan)
-- Nodemon for development
-- Basic health check route
-- Beginner-friendly code with comments
+## API Endpoints
 
-## Setup Instructions
+### AI Gatekeeper
 
-1. **Install dependencies:**
-   ```sh
-   cd backend
-   npm install
-   ```
-2. **Run in development mode (with nodemon):**
-   ```sh
-   npm run dev
-   ```
-3. **Run in production mode:**
-   ```sh
-   npm start
-   ```
-4. **Test health route:**
-   Visit [http://localhost:3000/health](http://localhost:3000/health)
+- `POST /api/ai/chat`
+   - Body: `{ "prompt": "read sample.txt" }`
+   - Returns: decision, risk, and execution result
 
----
+### Direct File Routes
 
-**Folder Purpose:**
-- `middleware/`: Custom Express middleware (e.g., authentication, logging)
-- `routes/`: API route handlers
-- `tools/`: Utility/helper functions
-- `policies/`: Access control and AI policies
-- `logs/`: Log files and logging utilities
-- `services/`: Business logic and integrations
+- `POST /api/files/read-file`
+- `POST /api/files/write-file`
+- `DELETE /api/files/delete-file`
+- `GET /api/files/logs`
 
----
+## Setup
 
-**Security Packages Used:**
-- [helmet](https://www.npmjs.com/package/helmet): Sets HTTP headers for security
-- [cors](https://www.npmjs.com/package/cors): Enables Cross-Origin Resource Sharing
+1. Install dependencies
 
----
+```sh
+cd backend
+npm install
+```
 
-**Next Steps:**
-- Add your own middleware, routes, tools, policies, and services as needed.
+2. Create `.env` in `backend/`:
+
+```env
+PORT=3000
+```
+
+3. Start Ollama locally (default URL: `http://localhost:11434`) and ensure `qwen3` model is available.
+
+4. Run backend
+
+```sh
+npm run dev
+```
+
+## Notes
+
+- Frontend default origin expected by backend CORS: `http://localhost:5173`
+- Logs are currently file-based and intended for local development
